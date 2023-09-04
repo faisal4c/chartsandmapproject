@@ -27,12 +27,53 @@
 .App-link {
   color: #61dafb;
 }
+.mainApp{
+  display: flex;
+  height: fit-content;
+  padding-left: 20%;
+}
+.sidebar{
+  position: fixed;
+  left:0px;
+  top:0;
+  width: 18%;
+  min-height: 100vh !important;
+  padding-right: 1rem;
+  background-color: white;
+}
+.sidebar a{
+  display: block;
+  background-color: #111439;
+  margin:1rem 0rem 1rem 0.5rem;
+  padding:1rem 0.5rem;
+  color:#F8F8F9;
+  border-radius: 20px;
+  text-decoration: none;
+}
 
+.sidebar a:hover{
+  width: 110%;
+  color:#F8F8F9;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  text-decoration: none;
+}
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+@media all and (max-width:600px){
+  
+  .sidebar a{
+    width: 90%;
+    font-size: 0.8rem;
+    margin:0.5rem 0rem 1rem 0.5rem;
+    padding:0.5rem 0.25rem;
+    text-align: center;
   }
 }

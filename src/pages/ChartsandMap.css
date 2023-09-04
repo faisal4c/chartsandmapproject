@@ -1,0 +1,70 @@
+.chartsandmappage{
+    width: 100%;
+    padding:1rem;
+    overflow: hidden;
+}
+
+.chartsandmappage h1{
+    text-align: center;
+    text-decoration: underline;
+}
+
+.chartsandmappage h1:nth-of-type(1){
+    text-decoration: none;
+}
+
+.lineChart{
+    width: 90%;
+    max-width: 900px;
+    margin: 1rem auto 5rem;
+    height: 85%;
+    max-height: 400px;
+    background-color: white;
+}
+
+.leaflet-container{
+    width: 90%;
+    max-width: 900px;
+    height: 80vh;
+    max-height: 500px;
+    margin: 1rem auto 5rem;
+    margin: auto;
+}
+.leaflet-container span{
+    font-weight: 800;
+}
+.leaflet-container span:hover{
+    transform: scale(1.2);
+}
+
+@media all and (max-width:800px){
+    .chartsandmappage h1{
+        font-size: 1rem;
+    }
+    .lineChart{
+        width: 90%;
+        height: 65%;
+    }
+    .leaflet-container{
+        width: 90%;
+        max-width: 900px;
+        height: 50vh;
+        max-height: 500px;
+        margin: 1rem auto 5rem;
+        margin: auto;
+    }
+}
+@media all and (max-width:600px){
+    .lineChart{
+        width: 95%;
+        height: 25%;
+    }
+    .leaflet-container{
+        width: 95%;
+        max-width: 900px;
+        height: 40vh;
+        max-height: 500px;
+        margin: 1rem auto 5rem;
+        margin: auto;
+    }
+}

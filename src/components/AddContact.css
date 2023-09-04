@@ -1,0 +1,58 @@
+
+.addContact{
+    width: 50vw;
+    margin:auto;
+    border:2px solid white;
+    background-color: white;
+    color:black;
+    padding:0.5rem 0.25rem;
+    border-radius:12px;
+}
+.addContact form div{
+    width: 100%;
+    text-align: center;
+    margin: 1rem auto;
+}
+
+.addContact form button,.create-contact{
+    display: block;
+    background-color: #111439;
+    color: #F8F8F9;
+    border:none;
+    border-radius: 7px;
+    margin:1rem auto;
+    padding:0.5rem;
+}
+.addContact form button:hover,.create-contact:hover{
+    transform:scale(1.05);
+    cursor:pointer;
+}
+
+
+@media all and (max-width:500px){
+    .addContact form div:nth-of-type(3) {
+        display: flex;
+        width: 80%;
+        margin:1rem auto;
+        text-align: center;
+        flex-wrap: wrap;
+    }
+    .addContact form div:nth-of-type(3) input {
+        transform: translateY(20px);
+    }
+
+    .addContact form div{
+        width: 100%;
+        text-align: center;
+        margin: 0.25rem auto;
+    }
+    .addContact form div input{
+        width: 90%;
+        text-align: center;
+        margin: 0.2rem auto;
+    }
+
+    .addContact form button,.create-contact{
+        margin:0.2rem auto;
+    }
+}

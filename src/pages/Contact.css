@@ -1,0 +1,42 @@
+.contact-page-wrapper{
+    width: 100%;
+    padding-top: 1rem;
+}
+
+.contact-list{
+    display: flex;
+    width: 60vw;
+    margin:1rem auto;
+    flex-wrap: wrap;
+    gap:30px;
+    justify-content:space-evenly;
+}
+.contact-list > div{
+    background-color: white;
+    color:black;
+    border-radius: 10px;
+    padding:1rem;
+}
+
+.contact span{
+    color: #111439;
+    font-size:1.2rem;
+    font-weight: 500;
+    transform:scale(1.9);
+    text-transform: capitalize;
+}
+.contact button{
+    background-color: #111439;
+    color: #F8F8F9;
+    border:none;
+    border-radius: 7px;
+    margin:0.5rem 0.2rem;
+    padding:0.5rem 1rem;
+}
+.contact:hover{
+    transform:scale(1.05);
+}
+.contact button:hover{
+    transform:scale(1.05);
+    cursor:pointer;
+}
