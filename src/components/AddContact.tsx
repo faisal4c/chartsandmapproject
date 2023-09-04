@@ -1,15 +1,13 @@
 import React from "react";
 import './AddContact.css'
 import { useState,useContext } from "react";
-import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 import { contactContext } from "../Context Provider/ContactContext";
 export default function Contact() {
   const [showAddContact, setshowAddContact] = useState(false);
   const [firstName, setFirstName] = useState('');
   const [lastName, setLastName] = useState('');
   const [status, setStatus] = useState('');
-  const {contacts,setContacts}=useContext(contactContext);
-  console.log(contacts);
+  const {setContacts}=useContext(contactContext);
 
   const handleClick=(e)=>{
     e.preventDefault();
@@ -24,7 +22,6 @@ export default function Contact() {
     setshowAddContact(false);
   }
   
-  console.log(firstName,lastName,status);
   return (
     <div className="addContact">
       {showAddContact && (

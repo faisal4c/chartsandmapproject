@@ -47,7 +47,7 @@ export default function ChartsandMap() {
       );
       const data = await res.json();
       setMapFetchedData(data);
-      console.log(data);
+      
     };
     getMapData();
   }, []);
@@ -69,9 +69,6 @@ export default function ChartsandMap() {
 
   }, [mapFetchedData]);
 
-  console.log(graphFetchedData);
-  console.log(label);
-  console.log(dataPoints);
   let graphData = {
     labels: label,
     datasets: [
@@ -106,7 +103,7 @@ export default function ChartsandMap() {
         {
           mapFetchedData && 
           mapFetchedData.map((elem)=>(
-            <Marker position={[elem.countryInfo.lat, elem.countryInfo.long]} icon={markerIcon}>
+            <Marker position={[elem.countryInfo.lat, elem.countryInfo.long]} icon={markerIcon} key={Math.random()}>
             <Popup>
               Country Name: <span> {elem.country}</span><br /> 
               Active Cases: <span>{elem.active}</span>  <br /> 

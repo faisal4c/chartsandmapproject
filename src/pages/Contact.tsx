@@ -1,12 +1,11 @@
 import React from "react";
 import './Contact.css'
 import { useState, useContext } from "react";
-import { BrowserRouter, Routes, Route, Link,useNavigate} from "react-router-dom";
-import CreateContact from "../components/CreateContact.js";
+import { useNavigate} from "react-router-dom";
+
 import AddContact from "../components/AddContact.tsx";
 import { contactContext } from "../Context Provider/ContactContext.js";
 export default function Contact() {
-  const [showAddContact, setshowAddContact] = useState(true);
   const {contacts,setContacts}=useContext(contactContext);
   const navigate=useNavigate();
 
